@@ -1,0 +1,28 @@
+.profile_wallpaper {
+    width: 100%;
+    height: 240px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 15px 0;
+}
+
+.profile_wallpaper img {
+    width: 100%;
+    height: 100%;
+}
+
+.user_avatar {
+    width: 130px;
+    height: 130px;
+    margin-right: 15px;
+}
+
+.user_avatar img {
+    width: 100%;
+    height: 100%;
+}
+
+.user_info p {
+    font-size: 20px;
+} 

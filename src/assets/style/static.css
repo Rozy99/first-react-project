@@ -1,0 +1,67 @@
+/*============================---- ROOT-STYLE-START ----============================*/
+:root {
+  --color-global: #5091E7;
+  --color-gradient: linear-gradient(180deg, #2dca73 0%, #0c8f71 100%);
+  --border-radius: 8px;
+  --transition-all: 0.3s;
+}
+/*============================---- ROOT-STYLE-END ----============================*/
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+.btn{
+    position: relative;
+    overflow: hidden;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.btn:before {
+    content: "";
+    position: absolute;
+    width: 3em;
+    height: 100%;
+    top: 0;
+    left: -35%;
+    -webkit-transform: skewX(-45deg) translateX(0);
+    -ms-transform: skewX(-45deg) translateX(0);
+    transform: skewX(-45deg) translateX(0);
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    visibility: hidden;
+}
+.btn:hover:before {
+    left: 130%;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.bg_cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg_contain {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.btn_bg button {
+  background-color: #004B9D;
+}

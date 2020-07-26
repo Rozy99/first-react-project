@@ -1,0 +1,90 @@
+.dialogs {
+    padding: 20px;
+}
+
+.dialogsItems {
+    position: relative;
+    padding-right: 60px;
+}
+
+.active a {
+    color: #fff;
+}
+
+.dialogsItems::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color:#5FCDDA;
+    top: 0;
+    right: 0;
+}
+
+.dialog {
+    position: relative;
+    padding-left: 15px;
+}
+
+.dialog + .dialog {
+    margin-top: 20px;
+}
+
+.dialog::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #004E66;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.messages {
+    margin-left: 20px;
+    width: 100%;
+}
+
+.message {
+    width: 280px;
+    background-color: #fff;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.message + .message {
+    margin-top: 25px;
+}
+
+.message img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.message p {
+    margin: 10px 15px;
+}
+
+.message:nth-child(even) {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+}
